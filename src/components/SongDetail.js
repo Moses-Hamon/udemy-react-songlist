@@ -10,18 +10,18 @@ const showDetail = ({ song }) => {
         </div>
       </div>
     );
-  } else {
-    return (
-      <div className="ui cards">
-        <div className="card">
-          <div className="content">
-            <div className="header">Title: {song.title}</div>
-            <div className="meta">Duration: {song.duration}</div>
-          </div>
+  }
+  
+  return (
+    <div className="ui cards">
+      <div className="card">
+        <div className="content">
+          <div className="header">Title: {song.title}</div>
+          <div className="meta">Duration: {song.duration}</div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 };
 
 const SongDetail = props => {
